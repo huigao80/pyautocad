@@ -3,17 +3,17 @@ import jieba
 import os
 import jieba.analyse
 reload(sys)
-sys.setdefaultcoding('utf-8')
+sys.setdefaultencoding('utf8')
 
 top_num = 30
 
-soruce_dir = './result'
+source_dir = './result'
 top_dir = './'
-top_file = 'czh.txt'
+top_file = 'czh1.txt'
 
 def get_topic():
     print 'start process...'
-    top_filename = os.path.join(top_dir,topfile)
+    top_filename = os.path.join(top_dir,top_file)
     if os.path.exists(top_filename):
         print top_filename + 'exists!'
         os.remove(top_filename)
